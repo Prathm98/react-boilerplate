@@ -1,8 +1,8 @@
-# This boilerplate is creted by BitByBit team
+# REACT JS Boilerplate
 
-<div align="center">
+<div>
   Created by BitByBit team and maintained with ❤️ by an amazing <a href="https://www.hackerearth.com/challenges/hackathon/airbus-aerothon-40-finale/dashboard/1bfeeee/team/">team of developers</a>.
-</div>
+</div><br />
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
