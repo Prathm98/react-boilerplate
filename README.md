@@ -11,6 +11,13 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - Node v14.x or above : Installation instructions can be found [here.](https://nodejs.dev/learn/how-to-install-nodejs)
 - Node Package Manager v6.x or above : It will be installed along with node installation.
 
+## Backend server specific changes
+
+If your backend is running on other url apart from [http://localhost:5000](http://localhost:5000) then,
+
+- Update `REACT_APP_BACKEND_URL` in `.env` file present in project directory.
+- Update "proxy" property in `package.json` file present in project directory.
+
 ## Available Scripts
 
 To start with the project, run below command to install the project:
