@@ -1,14 +1,26 @@
-# Getting Started with Create React App
+# This boilerplate is creted by BitByBit team
+
+<div align="center">
+  <sub>Created by BitByBit team and maintained with ❤️ by an amazing <a href="https://www.hackerearth.com/challenges/hackathon/airbus-aerothon-40-finale/dashboard/1bfeeee/team/">team of developers</a>.</sub>
+</div>
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Prerequisite
+
+- Node v14.x or above : Installation instructions can be found [here.](https://nodejs.dev/learn/how-to-install-nodejs)
+- Node Package Manager v6.x or above : It will be installed along with node installation.
+
 ## Available Scripts
 
-In the project directory, you can run:
+To start with the project, run below command to install the project:
+
+### `npm install`
+
+Now your application is ready to run. Run below command to run app in developement mode.
 
 ### `npm start`
 
-Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
