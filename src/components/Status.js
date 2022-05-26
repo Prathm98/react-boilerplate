@@ -9,10 +9,12 @@ const Status = () => {
   //   Backend API calls
   useEffect(() => {
     getStatus().then((result) => {
-      setStatus(result)
-      getDetails().then((techResult) => {
-        setTech(techResult)
-      })
+      setStatus(result.Status)
+      if (result) {
+        getDetails().then((techResult) => {
+          setTech(techResult.Stack)
+        })
+      }
     })
   }, [])
 

@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import Status from './Status'
 
 const HomePage = () => {
@@ -20,11 +19,6 @@ const HomePage = () => {
         <br />
         Update <code>'REACT_APP_BACKEND_URL'</code> in <code>'.env'</code> file
         present in project directory.
-      </p>
-      <p>
-        <Link to='/about' className='App-link'>
-          ABOUT TEAM
-        </Link>
       </p>
 
       {/* Status component */}

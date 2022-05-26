@@ -25,3 +25,27 @@ export const getDetails = async () => {
     return null
   }
 }
+
+// Post method Demo
+export const postMethodDemo = async () => {
+  try {
+    const status = await axios.post(
+      `${process.env.REACT_APP_BACKEND_URL}/postdemo`,
+      {
+        param1: 'value1',
+        param2: 'value2',
+        param3: 'value3',
+      },
+      {
+        headers: {
+          accept: 'application/json',
+        },
+      }
+    )
+
+    return status && status.status && status.status === 200
+  } catch (error) {
+    // console.error(error)
+    return false
+  }
+}
