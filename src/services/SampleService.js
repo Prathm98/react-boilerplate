@@ -25,6 +25,42 @@ export const getDetails = async () => {
   }
 }
 
+// Get members list
+export const getMembers = async () => {
+  try {
+    const status = await axios.get(
+      `${process.env.REACT_APP_BACKEND_URL}/members`
+    )
+
+    return status && status.status && status.status === 200 && status.data
+  } catch (error) {
+    // console.error(error)
+    return null
+  }
+}
+
+// Add Member method
+export const addMember = async (newmember) => {
+  try {
+    const status = await axios.post(
+      `${process.env.REACT_APP_BACKEND_URL}/addmember`,
+      {
+        newmember,
+      },
+      {
+        headers: {
+          accept: 'application/json',
+        },
+      }
+    )
+
+    return status && status.status && status.status === 200 && status.data
+  } catch (error) {
+    // console.error(error)
+    return false
+  }
+}
+
 // Post method Demo
 export const postMethodDemo = async (value1, value2, value3) => {
   try {

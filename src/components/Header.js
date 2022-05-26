@@ -16,6 +16,11 @@ const Header = () => {
             <em>About Team</em>
           </Link>
         </li>
+        <li>
+          <Link to='/members' className='nav-link'>
+            <em>Members</em>
+          </Link>
+        </li>
       </ul>
     </div>
   )
