@@ -4,8 +4,7 @@ import axios from 'axios'
 export const getStatus = async () => {
   try {
     const status = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/`)
-
-    return status
+    return status && status.status && status.status === 200
   } catch (error) {
     // console.error(error)
     return false

@@ -4,15 +4,15 @@ import '../assets/css/Header.css'
 
 const Header = () => {
   return (
-    <div class='nav'>
+    <div className='nav'>
       <ul>
         <li>
-          <Link to='/' class='nav-link'>
+          <Link to='/' className='nav-link'>
             Home
           </Link>
         </li>
         <li>
-          <Link to='/about' class='nav-link'>
+          <Link to='/about' className='nav-link'>
             <em>About Team</em>
           </Link>
         </li>
