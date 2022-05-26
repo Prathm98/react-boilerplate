@@ -3,12 +3,12 @@ import { getDetails, getStatus } from '../services/SampleService'
 
 const Status = () => {
   // Status and tech state
-  const [status, setStatus] = useState(null)
+  const [status, setStatus] = useState(false)
   const [tech, setTech] = useState(null)
 
   //   Backend API calls
   useEffect(() => {
-    getStatus().then((result) => {
+    getStatus().then((result: any) => {
       setStatus(result)
 
       if (result) {

@@ -26,14 +26,18 @@ export const getDetails = async () => {
 }
 
 // Post method Demo
-export const postMethodDemo = async () => {
+export const postMethodDemo = async (
+  value1: string,
+  value2: string,
+  value3: number
+) => {
   try {
     const status = await axios.post(
       `${process.env.REACT_APP_BACKEND_URL}/postdemo`,
       {
-        param1: 'value1',
-        param2: 'value2',
-        param3: 'value3',
+        param1: value1,
+        param2: value2,
+        param3: value3,
       },
       {
         headers: {
