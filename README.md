@@ -18,6 +18,8 @@ If your backend is running on other url apart from [http://localhost:5000](http:
 - Update `REACT_APP_BACKEND_URL` in `.env` file present in project directory.
 - Update "proxy" property in `package.json` file present in project directory.
 
+Note: It is recommended to add `.env` file to `.gitignore` file.
+
 ## POST method demo
 
 POST method demo is available in `src/services/SampleService.js` file as `postMethodDemo()` method.
